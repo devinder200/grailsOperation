@@ -3,7 +3,7 @@ package grailproj
 class Car {
 
     String carModel;
-    Engine engine;
+    static hasOne = [engine:Engine]
     static constraints = {
         engine unique:true
     }

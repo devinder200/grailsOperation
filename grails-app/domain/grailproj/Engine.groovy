@@ -2,8 +2,9 @@ package grailproj
 
 class Engine {
 
-    String engineId;
-
+    String engineName;
+    Car car;
+    static belongsTo = [car:Car]
     static constraints = {
     }
 }
