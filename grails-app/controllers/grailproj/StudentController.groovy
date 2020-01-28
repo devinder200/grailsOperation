@@ -19,6 +19,7 @@ class StudentController {
     }
 
     def save(Student student) {
+        student.setBook(book:new Book());
         studentService.save(student)
         redirect action:"index", method:"GET"
     }

@@ -8,6 +8,10 @@ class BootStrap {
             new Student(name: 'Jane', rollno: '33').save()
             new Student(name: 'Scott', rollno: '43').save()
         }
+        if (Book.count() == 0) {
+            new Book(title: 'book 1 title').save()
+
+        }
     }
     def destroy = {
     }
