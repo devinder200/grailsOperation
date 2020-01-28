@@ -1,8 +1,8 @@
 package grailproj
 
 class Book {
-
-    Author author;
+    static belongsTo = Author
+    static hasMany = [authors:Author]
     String title;
 
     static constraints = {

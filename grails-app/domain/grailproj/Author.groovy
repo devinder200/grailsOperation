@@ -1,7 +1,7 @@
 package grailproj
 
 class Author {
-static hasmany=[book:Book]
+static hasMany=[books:Book]
     String authorName;
 
     static constraints = {
