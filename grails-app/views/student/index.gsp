@@ -1,16 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
 
-    <title>Students</title>
+    <title>Welcome to Devinder</title>
+    <g:link controller="Student" action="xyz">
+        <button type="button">Press me!!!</button>
+    </g:link>
 </head>
 <body>
-<g:each in="${students}" var="student" status="i">
-    <h3>${i+1}. ${student.name}, ${student.rollno}</h3>
-    <p>
-
-    </p>
-    <br/>
-</g:each>
+Welcome to Devinder
+new
 </body>
 </html>

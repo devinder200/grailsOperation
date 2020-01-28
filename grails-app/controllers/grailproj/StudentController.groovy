@@ -5,12 +5,15 @@ class StudentController {
     def studentService
 
     def index() {
-        def students = Student.list()
-        [students:students]
+
 
     }
 
+    def xyz() {
 
+        render(view:"apple")
+
+    }
 
 
 
