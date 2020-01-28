@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="layout" content="main" />
+
+    <title>Students</title>
 </head>
 <body>
-<div class="nav" role="navigation">
-    <ul>
-        <li><g:link class="create" action="create">Create</g:link></li>
-    </ul>
-</div>
-<div id="list-student" class="content scaffold-list" role="main">
-    <f:table collection="${studentList}"
-             properties="['name', 'rollno']" />
-</div>
+<g:each in="${students}" var="student" status="i">
+    <h3>${i+1}. ${student.name}, ${student.rollno}</h3>
+    <p>
+
+    </p>
+    <br/>
+</g:each>
 </body>
 </html>
