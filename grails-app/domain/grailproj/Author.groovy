@@ -1,9 +1,15 @@
 package grailproj
 
+import sun.awt.X11.XMappingEvent
+
 class Author {
-static hasmany=[book:Book]
+static hasMany=[book:Book]
     String authorName;
 
+
+    static mapping = {
+        version false
+    }
     static constraints = {
     }
 }

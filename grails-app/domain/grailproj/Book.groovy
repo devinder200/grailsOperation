@@ -2,9 +2,12 @@ package grailproj
 
 class Book {
 
-    Author author;
-    String title;
 
+    String title;
+    static mapping = {
+        version false;
+    }
+    static belongsTo =  Author
     static constraints = {
     }
 }
