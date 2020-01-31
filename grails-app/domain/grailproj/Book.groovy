@@ -4,10 +4,11 @@ class Book {
 
 
     String title;
+    String length;
     static mapping = {
         version false;
     }
-    static belongsTo =  Author
+    static belongsTo =  [author : Author]
     static constraints = {
     }
 }
