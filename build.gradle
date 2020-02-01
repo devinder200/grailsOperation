@@ -59,6 +59,7 @@ dependencies {
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
     testRuntime "org.seleniumhq.selenium:selenium-chrome-driver:2.47.1"
     runtime "mysql:mysql-connector-java:5.1.38"
+    compile 'org.grails.plugins:spring-security-core:3.2.3'
 }
 
 bootRun {
